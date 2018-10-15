@@ -66,6 +66,20 @@ public class Proj03_SimpleBST_student<K extends Comparable<K>, V>
 	 */
 	public void genDebugDot()
 	{
+		File file = new File("remove" + size + ".dot");
+		FileWriter writer = new FileWriter(file);
+		writer.write("digraph{\n");
+		for(int i = 0; i < arr.length; i++) {
+			writer.write("\t" + arr[i] + ";\n");
+		}
+		for(int i = 0; 2*i + 2 < arr.length; i++) {
+			writer.write("\t" +arr[i] + "->" + arr[2*i + 1] + ";\n");
+			writer.write( "\t" +arr[i] + "->" + arr[2*i + 2] + ";\n");
+		}
+		writer.write("}\n");
+		writer.close();
+		
+	}
 		// TODO: open up a file (in the *CURRENT* directory!)
 
 		// TODO: fill it out (probably with a recursive function?)
