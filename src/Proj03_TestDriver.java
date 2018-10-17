@@ -29,13 +29,16 @@ public class Proj03_TestDriver
 
 		if (args.length == 1 && args[0].equals("example"))
 		{
-			is = new Proj03_SimpleBST_example<Integer,String> ("debug_example_is");
-			ii = new Proj03_SimpleBST_example<Integer,Integer>("debug_example_ii");
-			si = new Proj03_SimpleBST_example<String ,Integer>("debug_example_si");
+			//is = new Proj03_SimpleBST_example<Integer,String> ("debug_example_is");
+			//ii = new Proj03_SimpleBST_example<Integer,Integer>("debug_example_ii");
+			//si = new Proj03_SimpleBST_example<String ,Integer>("debug_example_si");
+			is = new Proj03_SimpleBST_student<Integer,String> ("debug_student_is");
+			ii = new Proj03_SimpleBST_student<Integer,Integer>("debug_student_ii");
+			si = new Proj03_SimpleBST_student<String ,Integer>("debug_student_si");
 		}
 		else if (args.length == 0)
 		{
-			is = new Proj03_SimpleBST_student<Integer,String> ("debug_student_ii");
+			is = new Proj03_SimpleBST_student<Integer,String> ("debug_student_is");
 			ii = new Proj03_SimpleBST_student<Integer,Integer>("debug_student_ii");
 			si = new Proj03_SimpleBST_student<String ,Integer>("debug_student_si");
 		}

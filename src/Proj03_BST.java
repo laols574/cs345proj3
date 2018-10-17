@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 /* Proj03_BST
  *
  * Author: Russ Lewis

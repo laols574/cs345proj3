@@ -3,7 +3,7 @@ Project #3
 BSTs and Generics
 due at 5pm, Thu 18 Oct 2018
 1 Introduction
-In this project, you’ll be implementing a BST, continuing to practice with gen- erating .dot files, and getting some experience with Java generics. And of course, you’re probably not surprised: I’m going to have you write it in the x=change(x) style.
+In this project, you’ll be implementing a BST, continuing to practice with generating .dot files, and getting some experience with Java generics. And of course, you’re probably not surprised: I’m going to have you write it in the x=change(x) style.
 The data structure that you will write is a simple BST. It will not include any self-balancing for this project, but it will include delete (including case 3) and also manual rotations. You will also be maintaining a simple metadata field for each node, which is the count of all of the nodes in that subtree; you’ll have to update it every time that you insert, delete, or rotate a node.
 2 Java Generics
 We’ve discussed Java generics in class - but now, you are going to make use of them. The key idea of Java generics is that classes and interfaces can have ‘type parameters,’ which don’t change how the code works, but instead change what it works on. Type parameters are declared in angle brackets, next to the type name, like this:
